@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h5 style="text-align: center; margin: 0px;">Desenvolvido por Gustavo Venceslau</h5>
+    <h1>Recibo Online</h1>
+    <div class="container">
+        <form action="teste.php">
+            <fieldset>
+                <label for="valor">Valor</label>
+                <input type="number" name="valor" id="valor" placeholder="R$ 0,00" required>
+
+                <label for="nome">Nome do Pagador</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome do pagador" required>
+
+                <label for="cpf/cnpj">CPF/CNPJ</label>
+                <input type="text" name="cpf" id="cpf/cnpj" maxlength="18" placeholder="Digite o CPF/CNPJ do Pagador" required>
+
+                <label for="referente">Referente à</label>
+                <input type="text" name="referente" id="referente" placeholder="Prestação de Serviços" required>
+
+                <label for="end">Endereço</label>
+                <input type="text" name="end" id="end" placeholder="Prestação de Serviços" required>
+
+               
+
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" placeholder="Digite o bairro" required>
+
+                <label for="CEP">CEP</label>
+                <input type="text" name="CEP" id="CEP" placeholder="Digite o CEP" required>
+
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data" required>
+
+                <label for="name-emissor">Nome do Emissor</label>
+                <input type="text" name="nome-emissor" id="nome-emissor" required>
+
+                <div class="control">
+                    <input type="radio" id="Dinheiro" name="gender" value="Dinheiro" required>
+                    <label for="Dinheiro">Dinheiro</label>
+                </div>
+                <div class="control">
+                    <input type="radio" id="cheque" name="gender" value="cheque" required>
+                    <label for="cheque">Cheque</label>
+                </div>
+                <div class="control">
+                    <input type="radio" id="transf" name="gender" value="transf" required>
+                    <label for="transf">Transferência/Depósito</label>
+                </div>
+                <div class="control">
+                    <input type="radio" id="card" name="gender" value="card" required>
+                    <label for="card">Cartão de Débito/Crédito</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
